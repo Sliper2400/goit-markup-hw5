@@ -88,7 +88,7 @@ a {
     color: var(--blue-color);
     text-decoration: none;
     margin-right: 76px;
-    transition-property: border, color, box-shadow, background-color;
+    transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: var(--cubic);
 
@@ -147,8 +147,8 @@ a {
     letter-spacing: 0.02em;
     color: var(--grey-color);
     padding: 24px 0;
-    transition-property: border, color, box-shadow, background-color;
-    transition-duration: 2500ms;
+    transition-property: color;
+    transition-duration: 250ms;
     transition-timing-function: var(--cubic);
 }
 
@@ -162,13 +162,16 @@ a {
 
 .menu-link::after {
     position: absolute;
-    bottom: -1px;
+    bottom: -4px;
     left: 0;
     content: '';
     width: 100%;
     height: 4px;
     border-radius: 2px;
     display: inline-block;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: var(--cubic);
 }
 
 .menu-link.current::after,
@@ -196,7 +199,7 @@ a {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--dark-grey);
-    transition-property: border, color, box-shadow, background-color;
+    transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: var(--cubic);
 }
@@ -256,7 +259,7 @@ a {
     min-width: 169px;
     height: 56px;
     border: none;
-    transition-property: border, color, box-shadow, background-color;
+    transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: var(--cubic);
 }
@@ -448,7 +451,7 @@ a {
     height: 40px;
     background-color: var(--blue-color);
     border-radius: 50%;
-    transition-property: border, color, box-shadow, background-color;
+    transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: var(--cubic);
 }
@@ -502,7 +505,7 @@ a {
     color: var(--light-gray);
     border: 1px solid var(--light-gray);
     border-radius: 4px;
-    transition-property: border, color, box-shadow, background-color;
+    transition-property: border, color;
     transition-duration: 250ms;
     transition-timing-function: var(--cubic);
 }
@@ -562,7 +565,7 @@ a {
     height: 40px;
     background-color: var(--blue-color);
     border-radius: 50%;
-    transition-property: border, color, box-shadow, background-color;
+    transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: var(--cubic);
 }
@@ -708,7 +711,7 @@ a {
 
 .cards-link {
     display: block;
-    transition-property: border, color, box-shadow, background-color;
+    transition-property: box-shadow;
     transition-duration: 250ms;
     transition-timing-function: var(--cubic);
 }
@@ -817,5 +820,5 @@ a {
 .modal-btn:hover,
 .modal-btn:focus {
     background-color: var(--purple-color);
-    color: var(--white-color);
+    fill: var(--white-color);
 }
